@@ -20,7 +20,7 @@ nav{
     background-color: rgba(240, 240, 240, 0.781);
 }
 .nav-left{
-    width: 70%;
+    width: 65%;
     display: flex;
 }
 .nav-left img{
@@ -38,33 +38,38 @@ nav{
     font-weight: 500;
     display: inline-table;
     padding: 10px 30px;
-    transition: background-color 1s ease-out;
+    transition: all 1s;
     border-radius: 10px;
 }
 .nav-left ul li:hover{
     background-color: #ff753e;
-    border-bottom: 2px solid #cc6600;
-    
+    box-shadow: 0px 0px 10px 0px rgb(78 78 78);
     cursor: pointer;
     color: white;
 }
 .nav-right{
-    width: 30%;
+    width: 35%;
     display: flex;
     
 }
+.nav-right span{
+    color: rgba(73, 70, 70, 0.767);
+    text-decoration: underline;
+    font-size: 12px;
+}
 .nav-right p, #bookTable{
     padding: 05px;
-    margin: 0px 10px;
     margin: auto;
 }
 .nav-right p{
     background-color: #FE4D2F;
     font-weight: 600;
     border-radius: 30px;
-    padding: 20px 40px;
+    padding: 20px 30px;
+    width: 230px;
     color: white;
     font-size: 17px;
+    text-align: center;
     transition: background-color 0.5s ;
     cursor: pointer;
 }
@@ -77,6 +82,10 @@ nav{
     font-weight: 600;
     text-decoration: none;
     border-bottom: 2px solid #f03f12;
+    transition: all 1s;
+}
+#bookTable:hover{
+    transform: scale(1.1);
 }
 nav, .top-section, .about-section, recipe-section, .cardList, .subscriber, .reservation{
     display: flex;
