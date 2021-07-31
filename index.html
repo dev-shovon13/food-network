@@ -5,130 +5,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon  -->
     <link rel="icon" href="images/favicon.png" type="image" sizes="16x16">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <!-- styles -->
     <link rel="stylesheet" href="style.css">
     <title>Food Junction</title>
 </head>
 
 <body>
-    <nav>
-        <div class="nav-left">
-            <img src="images/logo.png" alt="logo">
-            <ul>
-                <li>Home</li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <a href="#resere" id="bookTable">Book a Table</a>
-            <p><span>Call Now:</span> +880 1712 000000</p>
-        </div>
-    </nav>
-    <section class="top-section">
-        <div class="equal-width">
-            <h1 class="title-text"> <span>Skip</span> The Diet,<br>
-                Just Eat Healthy <br>
-                With Food Junction</h1>
-            <p class="top-para">Imagine you don't need a diet because we provide<br>
-                healthy and delicious food for you!</p>
-            <a href="https://github.com/dev-shovon13" class="btn" target="_blank">order food</a>
-        </div>
-        <div class="equal-width">
-            <img src="images/top-model.png" alt="image">
-        </div>
-    </section>
-    <section class="about-section" id="about">
-        <div class="equal-width">
-            <img src="images/about-model.png" alt="image">
-        </div>
-        <div class="equal-width about">
-            <h2>About Me</h2>
-            <p>A restaurant’s mission, vision, and values make up part of your brand’s identity. They fuel business
-                decisions while inspiring customers to frequent and employees to work for your restaurant. Creating a
-                mission statement for your restaurant can help you think critically about your goals, beyond serving
-                delicious food.</p>
-            <a href="https://github.com/dev-shovon13" class="btn" target="_blank">contact me</a>
-        </div>
-
-    </section>
-    <section class="recipe-section" id="menu">
-        <div class="recipe-top">
-            <h2>My Recipes</h2>
-            <p>You'll be amazed at how simple this is to make yet it tastes just like something that would be served up
-                in a restaurant. Serve this up at your next dinner party or to friends and I guarantee they will be
-                begging you for the recipe.</p>
-        </div>
-        <div class="cardList">
-            <div class="card">
-                <img src="images/food-1.jpg" alt="food photo">
-                <h3>Bang Bang Chicken</h3>
-                <p>This is a wonderful Americanized version of an extremely popular Sichuan Chinese dish. With
-                    twice-fried chicken, you get the crispy fried breading you'd expect, and the bang bang sauce drizzle
-                    just makes the entire dish spectacular.</p>
+    <!-- header section start -->
+    <header>
+        <nav class="">
+            <div class="nav-top">
+                <div class="nav-top-container">
+                    <a href="#reserve" class="bookTable">Book a Table</a>
+                    <p><i class="fas fa-phone-alt"></i> <span>+880 1712 000000</span></p>
+                </div>
             </div>
-            <div class="card">
-                <img src="images/food-2.jpg" alt="food photo">
-                <h3>Grilled Coffee and Cola Skirt Steak</h3>
-                <p>Two great drinks equals one fantastic marinade for skirt steak, the juiciest and most flavorful piece
-                    of meat you can put on a grill. It's smoky and subtly sweet. The flavors are balanced perfectly with
-                    the bitterness of the coffee in the grill marks.</p>
-            </div>
-            <div class="card">
-                <img src="images/food-3.png" alt="food photo">
-                <h3>Vegan “Cheesy” Broccoli Soup</h3>
-                <p>Tasting this soup, you’d never guess that it’s totally dairy-free. It’s creamy, tangy, rich, and
-                    satisfying – everything cheesy broccoli soup should be!</p>
+            <div class="nav-bottom container">
+                <img src="images/logo.png" alt="logo">
+                <div class="menu-items">
+                    <a href="">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#about">About</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact</a>
+                </div>
+                <i class="fas fa-bars"></i>
             </div>
 
-        </div>
+        </nav>
+    </header>
+    <!-- header section end -->
 
-    </section>
-    <section class="reservation" id="resere">
-        <div class="equal-width">
-            <img src="images/reserve-model.jpg" alt="image">
-        </div>
-        <div class="equal-width">
-            <form action="" class="reserve-form">
-                <h2>Book a table</h2>
-                <p>Making a reservation at <span class="marked-text">Food Junction</span> restaurant is easy and takes
-                    just a couple of minutes.</p>
-                <input type="number" placeholder="Number of Guest">
-                <input class="form-date" type="date" placeholder="Date">
-                <select class="form-time" name="meal-time" id="">
-                    <option value="">Select Your Time</option>
-                    <option value="">Breakfast</option>
-                    <option value="">Lunch</option>
-                    <option value="">Dinner</option>
-                </select>
-                <input type="text" placeholder="Phone No">
-                <textarea rows="5" name="" id="" placeholder="Message"></textarea>
-                <a href="https://github.com/dev-shovon13" class=" btn reserveButton">Send Request</a>
-            </form>
-        </div>
-    </section>
-    <section>
-        <div class="subscriber">
-            <div class="subscriber-item">
-                <h1>700K</h1>
-                <p>Youtube Subscribers</p>
+    <!-- main section start -->
+    <main>
+        <!-- top section start -->
+        <section class="top-section container flex image-order-set">
+            <div class="equal-width">
+                <h1 class="title-text"> <span>Skip</span> The Diet,<br>
+                    Just Eat Healthy <br>
+                    With Food Junction</h1>
+                <p class="top-para">Imagine you don't need a diet because we provide<br>
+                    healthy and delicious food for you!</p>
+                <a href="https://github.com/dev-shovon13" class="btn" target="_blank">order food</a>
             </div>
-            <div class="subscriber-item">
-                <h1>2.4m</h1>
-                <p>Instagram Followers</p>
+            <div class="equal-width">
+                <img src="images/top-model.png" alt="image">
             </div>
-            <div class="subscriber-item">
-                <h1>100K</h1>
-                <p>Dribble Shot Likes</p>
+        </section>
+        <!-- top section end -->
+
+        <!-- about section start -->
+        <section class="about-section" id="about">
+            <div class="container flex">
+                <div class="equal-width">
+                    <img src="images/about-model.png" alt="image">
+                </div>
+                <div class="equal-width about">
+                    <h2>About Me</h2>
+                    <p>A restaurant’s mission, vision, and values make up part of your brand’s identity. They fuel
+                        business
+                        decisions while inspiring customers to frequent and employees to work for your restaurant.
+                        Creating
+                        a
+                        mission statement for your restaurant can help you think critically about your goals, beyond
+                        serving
+                        delicious food.</p>
+                    <a href="https://github.com/dev-shovon13" class="btn contact-me-btn" target="_blank">contact me</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- about section end -->
+
+        <!-- recipe section start -->
+        <section class="recipe-section container" id="menu">
+            <div class="recipe-top">
+                <h2>My Recipes</h2>
+                <p class="recipe-top-para">You'll be amazed at how simple this is to make yet it tastes just like
+                    something that would be served
+                    up
+                    in a restaurant. Serve this up at your next dinner party or to friends and I guarantee they will be
+                    begging you for the recipe.</p>
+            </div>
+
+            <!-- cards section start  -->
+            <div class="cardList">
+
+                <!-- card 1 -->
+                <div class="card">
+                    <img src="images/food-1.jpg" alt="food photo">
+                    <h3>Bang Bang Chicken</h3>
+                    <p>This is a wonderful Americanized version of an extremely popular Sichuan Chinese dish. With
+                        twice-fried chicken, you get the crispy fried breading you'd expect, and the bang bang sauce
+                        drizzle
+                        just makes the entire dish spectacular.</p>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card">
+                    <img src="images/food-2.jpg" alt="food photo">
+                    <h3>Grilled Coffee and Cola Skirt Steak</h3>
+                    <p>Two great drinks equals one fantastic marinade for skirt steak, the juiciest and most flavorful
+                        piece
+                        of meat you can put on a grill. It's smoky and subtly sweet. The flavors are balanced perfectly
+                        with
+                        the bitterness of the coffee in the grill marks.</p>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card">
+                    <img src="images/food-3.png" alt="food photo">
+                    <h3>Vegan “Cheesy” Broccoli Soup</h3>
+                    <p>Tasting this soup, you’d never guess that it’s totally dairy-free. It’s creamy, tangy, rich, and
+                        satisfying – everything cheesy broccoli soup should be!</p>
+                </div>
+
+            </div>
+            <!-- cards section end  -->
+
+        </section>
+        <!-- recipe section end -->
+
+        <!-- reservation section start -->
+        <section class="reservation" id="reserve">
+            <div class="container flex reserve-flex">
+                <div class="equal-width">
+                    <img src="images/reserve-model.jpg" alt="image">
+                </div>
+                <div class="equal-width">
+                    <form action="" class="reserve-form">
+                        <div class="reserve-title">
+                            <h2>Book a table</h2>
+                            <p>Making a reservation at <span class="marked-text">Food Junction</span> restaurant is easy
+                                and
+                                takes
+                                just a couple of minutes.</p>
+                        </div>
+                        <input type="number" placeholder="Number of Guest">
+                        <input class="form-date" type="date" placeholder="Date">
+                        <select class="form-time" name="meal-time" id="">
+                            <option value="">Select Your Time</option>
+                            <option value="">Breakfast</option>
+                            <option value="">Lunch</option>
+                            <option value="">Dinner</option>
+                        </select>
+                        <input type="text" placeholder="Phone No">
+                        <textarea rows="5" name="" id="" placeholder="Message"></textarea>
+                        <a href="https://github.com/dev-shovon13" class=" btn reserveButton">Send Request</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- reservation section end -->
+
+        <!-- subscriber section start -->
+        <section class="container">
+            <div class="subscriber flex">
+                <div class="subscriber-item">
+                    <h1>700K</h1>
+                    <p>Youtube Subscribers</p>
+                </div>
+                <div class="subscriber-item">
+                    <h1>2.4m</h1>
+                    <p>Instagram Followers</p>
+                </div>
+                <div class="subscriber-item">
+                    <h1>100K</h1>
+                    <p>Dribble Shot Likes</p>
+                </div>
+            </div>
+        </section>
+        <!-- subscriber section end -->
+
+    </main>
+    <!-- main section end -->
+
+    <!-- footer section start -->
     <footer>
         <h3 class="footer-title"><span class="marked-text">Food</span> Junction</h3>
         <p>Eat healthy to live healthy. Live healthy to live happy</p>
+        <small>&copy; Copyright 2021 Food Junction</small>
     </footer>
+    <!-- footer section end -->
 
 </body>
 

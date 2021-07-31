@@ -1,10 +1,34 @@
+/* fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* utilities */
 * {
 	margin: 0;
 	padding: 0;
 }
 body {
 	font-family: 'Montserrat', sans-serif;
+}
+section{
+	margin: 40px auto;
+	padding: 30px 0;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+	align-items: center;
+}
+.equal-width {
+	width: 50%;
+}
+.equal-width:first-child{
+	margin-right: 50px;
+}
+.equal-width img {
+	width: 100%;
 }
 h1 {
 	font-size: 50px;
@@ -15,116 +39,6 @@ h2 {
 }
 h3 {
 	font-size: 23px;
-}
-nav {
-	background-color: rgba(240, 240, 240, 0.781);
-}
-.nav-left {
-	width: 65%;
-	display: flex;
-}
-.nav-left img {
-	width: 170px;
-	margin-right: 40px;
-	margin-left: 50px;
-	cursor: pointer;
-}
-.nav-left ul {
-	margin-top: 30px;
-}
-.nav-left ul li {
-	text-decoration: none;
-	font-weight: 500;
-	display: inline-table;
-	padding: 10px 30px;
-	transition: all 1s;
-	border-radius: 10px;
-}
-.nav-left ul li:hover{
-	background-color: #ff753e;
-	box-shadow: 0px 0px 10px 0px rgb(78 78 78);
-	cursor: pointer;
-	color: white;
-}
-.nav-left a{
-	text-decoration: none;
-	color: black;
-	transition: all 1s;
-}
-.nav-left ul li:hover a{
-	color: white;
-}
-.nav-right {
-	width: 35%;
-	display: flex;
-}
-.nav-right span {
-	color: rgba(73, 70, 70, 0.767);
-	text-decoration: underline;
-	font-size: 12px;
-}
-.nav-right p,
-#bookTable {
-	padding: 05px;
-	margin: auto;
-}
-.nav-right p {
-	background-color: #fe4d2f;
-	font-weight: 600;
-	border-radius: 30px;
-	padding: 20px 30px;
-	width: 230px;
-	color: white;
-	font-size: 17px;
-	text-align: center;
-	transition: background-color 0.5s;
-	cursor: pointer;
-}
-.nav-right p:hover {
-	background-color: #ff753e;
-}
-#bookTable {
-	margin: auto;
-	color: #f03f12;
-	font-weight: 600;
-	text-decoration: none;
-	border-bottom: 2px solid #f03f12;
-	transition: all 1s;
-}
-#bookTable:hover {
-	transform: scale(1.1);
-}
-nav,
-.top-section,
-.about-section,
-recipe-section,
-.cardList,
-.subscriber,
-.reservation {
-	display: flex;
-}
-.equal-width {
-	width: 50%;
-	margin: 60px;
-}
-.equal-width:first-child {
-	margin-right: 0px;
-}
-.equal-width img {
-	width: 100%;
-}
-.title-text {
-	color: #575757;
-	margin-top: 100px;
-	margin-bottom: 50px;
-}
-.top-para {
-	color: #7c7979;
-	font-weight: 500;
-	margin-bottom: 70px;
-}
-.title-text span {
-	color: #fc8f49;
 }
 .btn {
 	background-image: linear-gradient(#fba24f, #ff1e1e);
@@ -140,14 +54,107 @@ recipe-section,
 .btn:hover {
 	background-image: linear-gradient(#ff1e1e, #fba24f);
 }
+
+/* header  */
+nav{
+	padding-bottom: 15px;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav-top-container, .nav-bottom{
+	display: flex;
+	align-items: center;
+}
+.nav-top{
+	background: rgb(252, 252, 252);
+	border-bottom: 2px solid rgb(230, 230, 230);
+	padding: 7px;
+	margin-bottom: 20px;
+}
+.nav-top-container{
+	justify-content: flex-end;
+	width: 80%;
+	margin: 0 auto;
+}
+.nav-top p {
+	background-color: #FC8F49;
+	font-weight: 600;
+	border-radius: 30px;
+	padding: 10px 20px;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+	transition: background-color 0.5s;
+	cursor: pointer;
+}
+.nav-top p:hover {
+	background-color: #FD5031;
+}
+.bookTable {
+	margin-right: 60px;
+	color: #f03f12;
+	font-weight: 600;
+	text-decoration: none;
+	border-bottom: 2px solid #f03f12;
+	transition: all 1s;
+}
+.bookTable:hover {
+	transform: scale(1.1);
+}
+.fa-phone-alt{
+	color: #FFE9D6;
+	font-size: 18px;
+}
+.nav-bottom{
+	justify-content: space-between;
+}
+.nav-bottom img {
+	width: 120px;
+	margin-right: 40px;
+	cursor: pointer;
+}
+.nav-bottom a{
+	text-decoration: none;
+	color: rgb(59, 59, 59);
+	font-weight: 500;
+	padding: 10px 30px;
+	transition: all 0.5s;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.nav-bottom a:hover{
+	background-color: #ff753e;
+	box-shadow: 0px 0px 10px 0px rgb(230, 230, 230);
+	color: white;
+} 
+.fa-bars{
+	font-size: 25px;
+	color: rgb(102, 101, 101);
+	display: none;
+	border: 1px solid gray;
+	border-radius: 3px;
+	padding: 2px;
+}
+
+/* top section  */
+.title-text {
+	color: #575757;
+	margin-bottom: 30px;
+}
+.title-text span {
+	color: #fc8f49;
+}
+.top-para {
+	color: #7c7979;
+	font-weight: 500;
+	margin-bottom: 50px;
+}
+
+/* about section  */
 .about-section {
 	background-image: url("images/about-bg.png");
 	background-repeat: no-repeat;
-	background-size: contain;
-}
-.about-section img {
-	width: 64% !important;
-	margin-left: 100px;
+	background-size: cover;
 }
 .about h2 {
 	margin-top: 50px;
@@ -156,25 +163,38 @@ recipe-section,
 .about p {
 	color: rgb(37, 37, 37);
 	font-weight: 500;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	line-height: 25px;
-	width: 75%;
+	width: 95%;
 }
 
-/** Card Section **/
+/* recipe section  */
+.recipe-top {
+	text-align: center;
+}
+.recipe-top h2 {
+	margin-bottom: 30px;
+}
+.recipe-top-para {
+	width: 50%;
+	margin: auto;
+	margin-bottom: 50px;
+	color: rgb(85, 84, 84);
+	font-weight: 500;
+}
 .cardList {
-	margin-bottom: 70px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 20px;
+	justify-items: center;
 }
 .card {
-	margin: 25px;
 	border-radius: 30px;
 	padding: 20px;
 	background-color: white;
-	box-shadow: 0px 0px 10px rgb(155, 152, 152);
+	box-shadow: 0px 0px 10px rgb(206, 201, 201);
 	text-align: center;
+	margin-bottom: 10px;
 }
 .card img {
 	width: 100%;
@@ -189,34 +209,8 @@ recipe-section,
 .card h3 {
 	margin-bottom: 20px;
 }
-.recipe-top {
-	text-align: center;
-}
-.recipe-top h2 {
-	margin-bottom: 30px;
-}
-.recipe-top p {
-	width: 50%;
-	margin: auto;
-	margin-bottom: 30px;
-	color: rgb(85, 84, 84);
-	font-weight: 500;
-}
-.subscriber {
-	width: 80%;
-	margin: auto;
-	border-radius: 20px;
-	padding: 55px 75px;
-	background-color: white;
-	box-shadow: 0px 0px 10px rgb(167, 165, 165);
-	text-align: center;
-	margin-bottom: 60px;
-	margin-top: 50px;
-}
-.subscriber-item {
-	width: 33%;
-}
-/* reservation section */
+
+/* reservation section  */
 .reservation {
 	background-image: url("images/reservation.jpg");
 	background-repeat: no-repeat;
@@ -225,10 +219,10 @@ recipe-section,
 .reservation img {
 	border-radius: 20px;
 	margin-top: 80px;
+	width: 100%;
 }
-.reserve-form {
-	width: 80%;
-	margin: auto;
+.reserve-title {
+	text-align: center;
 }
 .reserve-form p {
 	color: rgb(76, 71, 71);
@@ -254,30 +248,41 @@ select,
 .form-date,
 .form-time {
 	display: inline-block !important;
+	width: 38% !important;
+	background-color: white !important;
 }
-.form-date {
-	width: 33% !important;
+
+/* subscriber section  */
+.subscriber {
+	border-radius: 20px;
+	padding: 55px 75px;
+	background-color: white;
+	box-shadow: 0px 0px 10px rgb(167, 165, 165);
+	text-align: center;
 }
-.form-time {
-	width: 40% !important;
+.subscriber-item {
+	width: 33%;
 }
-.reserveButton {
-	margin: auto;
-}
+
 /* footer section */
 footer {
 	background-color: #0b0d17;
 	text-align: center;
+	margin-top: 40px;
+	padding-bottom: 60px;
 }
 .footer-title {
 	font-size: 28px;
 	color: grey;
 	text-transform: uppercase;
-	padding: 40px;
+	padding: 20px;
 }
 footer p {
 	color: white;
-	padding-bottom: 100px;
+	margin-bottom: 20px;
+}
+footer small{
+	color: white;
 }
 .marked-text {
 	color: #fba24f;
@@ -285,18 +290,133 @@ footer p {
 
 /* Media Query */
 
+/* mobile devices */
 @media screen and (max-width: 768px) {
+	main{
+		text-align: center;
+	}
+	.equal-width:first-child{
+		margin-right: 0px;
+	}
+	.bookTable {
+		margin-right: 0;
+	}
+	.nav-top-container{
+		justify-content: space-between;
+	}
+	.nav-top , .nav-top p {
+		padding: 5px 10px;
+		font-size: 12px;
+	}
+	.about-section{
+		padding-bottom: 70px;
+	}
+	.menu-items{
+		display: none;
+	}
+	.fa-bars{
+		display: block;
+	}
 	.card {
 		width: 80%;
 	}
+	h1{
+		font-size: 35px;
+	}
+	.title-text {
+		color: #575757;
+		margin-top: 10px;
+	}
+	.flex{
+		flex-direction: column;
+	}
+	.equal-width {
+		width: 90%;
+	}
+	.image-order-set{
+		display: flex;
+		flex-direction: column;
+	}
+	.image-order-set div:first-child{
+		order: 2;
+	}
+	.recipe-top-para{
+		width: 90%;
+	}
+	.cardList {
+		grid-template-columns: repeat(1,1fr);
+	}
+	.reservation img {
+		margin-top: 20px;
+		width: 100%;
+	}
+	.form-date,
+	.form-time {
+	display: block !important;
+	}
+	.form-date {
+	width: 80% !important;
+	}
+	.form-time {
+	width: 90% !important;
+	}
+	.subscriber {
+		padding: 15px 10px;
+	}
+	.subscriber h1{
+		font-size: 25px;
+	}
+	.subscriber-item {
+		width: 100%;
+		margin-bottom: 15px;
+	}
 }
+
+/* tablet devices */
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-	.card {
-		width: 60%;
+	.equal-width:first-child{
+		margin-right: 0px;
 	}
+	.nav-bottom a{
+		padding: 10px 17px;
+	}
+	h1{
+		font-size: 35px;
+	}
+	.title-text {
+		color: #575757;
+		margin-top: 10px;
+	}
+	.recipe-top-para{
+		width: 90%;
+	}
+	.cardList {
+		grid-template-columns: repeat(2,1fr);
+	}
+	.reserve-flex{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.reserve-form input,
+	textarea,
+	select,
+	.reserveButton {
+	width: 90% !important;
 }
-@media screen and (min-width: 1024px) {
-	.card {
-		width: 25%;
+	.form-date,
+	.form-time {
+	display: block !important;
+	width: 80% !important;
 	}
+	.form-time{
+		width: 100% !important;
+	}
+	.subscriber {
+		padding: 25px 20px;
+	}
+	.subscriber h1{
+		font-size: 30px;
+	}
+
 }
